@@ -56,12 +56,30 @@ export function waNumber(raw) {
   return d.length >= 12 && d.length <= 13 ? d : "";
 }
 
-export function orderMessage(lines) {
+/** Unit price of a case: its own price, or the store's default price. 0 = no price set. */
+export function priceOf(product, catalog) {
+  const v = Number(product?.price ?? catalog?.settings?.price);
+  return v > 0 ? v : 0;
+}
+
+const money = (n) => Number(n).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+
+export function orderTotal(lines) {
+  return lines.reduce((s, l) => s + (l.price || 0) * l.qty, 0);
+}
+
+export function orderMessage(lines, { orderCode = "", paid = false } = {}) {
   const total = lines.reduce((n, l) => n + l.qty, 0);
+  const value = orderTotal(lines);
   const body = lines.map((l, i) => {
     const parts = [`${i + 1}. ${l.name} (${l.code})`, `${l.qty} ${l.qty === 1 ? "unidade" : "unidades"}`];
+    if (l.price) parts.push(money(l.price * l.qty));
     if (l.personalizavel) parts.push(l.nome ? `Nome na arte: ${l.nome}` : "Nome na arte: a combinar");
     return parts.join(" — ");
   }).join("\n");
-  return `Olá! Quero fazer este pedido pelo catálogo LUKX CASE:\n\n${body}\n\nTotal: ${total} ${total === 1 ? "capinha" : "capinhas"}`;
+  const head = paid ? "Olá! Fiz o pagamento via Pix deste pedido pelo catálogo LUKX CASE:" : "Olá! Quero fazer este pedido pelo catálogo LUKX CASE:";
+  let msg = `${head}\n\n${body}\n\nTotal: ${total} ${total === 1 ? "capinha" : "capinhas"}`;
+  if (value) msg += ` — ${money(value)}`;
+  if (paid) msg += `\nPagamento: Pix de ${money(value)}${orderCode ? ` (pedido ${orderCode})` : ""}\n\nVou enviar o comprovante aqui na conversa.`;
+  return msg;
 }

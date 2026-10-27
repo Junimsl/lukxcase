@@ -361,3 +361,29 @@ dialog.drawer[open] { animation: slide-in .25s var(--ease); }
 .cart-empty { flex: 1; display: grid; place-content: center; justify-items: center; gap: var(--s-2); text-align: center; padding: var(--s-6) var(--s-4); }
 .cart-empty p { margin: 0; color: var(--muted); max-width: 30ch; font-size: var(--fs-small); }
 .cart-empty-icon { width: 56px; height: 56px; border-radius: 50%; background: var(--accent); border: 1.5px solid var(--fg); display: grid; place-items: center; }
+
+/* Cart steps (carrinho → Pix) */
+.drawer-step { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.cart-total { display: flex; justify-content: space-between; align-items: baseline; margin: 0 0 var(--s-2); font-size: 1.0625rem; }
+.cart-total strong { font-size: 1.375rem; font-variant-numeric: tabular-nums; }
+
+.pix-step .back { align-self: flex-start; display: inline-flex; align-items: center; gap: 4px; margin-top: var(--s-3); font-size: var(--fs-small); }
+.pix-step .back svg { width: 16px; height: 16px; }
+.pix-body { flex: 1; overflow-y: auto; display: grid; align-content: start; justify-items: center; gap: var(--s-3); padding-block: var(--s-4); text-align: center; }
+.pix-body .eyebrow { margin: 0; }
+.pix-amount { margin: 0; font-family: var(--font-text); font-weight: 700; font-size: 2rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.pix-to { margin: 0; overflow-wrap: anywhere; }
+.pix-qr { width: min(240px, 70vw); aspect-ratio: 1; padding: var(--s-2); background: var(--branco); border: 1.5px solid var(--fg); border-radius: var(--r-md); }
+.pix-qr svg { display: block; width: 100%; height: 100%; }
+.pix-steps { margin: 0; padding-left: 1.2em; text-align: left; font-size: var(--fs-small); color: var(--preto-80); display: grid; gap: 2px; justify-self: stretch; }
+.pix-code {
+  width: 100%; resize: none; padding: var(--s-2) var(--s-3); border: 1.5px solid var(--line-strong); border-radius: var(--r-md);
+  background: var(--well); font: 500 var(--fs-micro)/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; word-break: break-all; text-align: left;
+}
+.pix-code:focus { outline: none; border-color: var(--fg); }
+.pix-body .btn.block { justify-self: stretch; }
+.pix-body > .muted.small { margin: 0; }
+.pix-paid { display: flex; gap: var(--s-2); align-items: center; padding: var(--s-3); border: 1.5px solid var(--fg); border-radius: var(--r-md); font-weight: 600; cursor: pointer; }
+.pix-paid input { width: 20px; height: 20px; accent-color: var(--fg); flex: none; }
+.pix-paid:has(input:checked) { background: var(--accent); }
+.btn.primary[aria-disabled="true"]:hover { background: var(--accent); color: var(--on-accent); }

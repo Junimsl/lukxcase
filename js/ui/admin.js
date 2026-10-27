@@ -9,6 +9,7 @@ import { UNCLASSIFIED, categoryMap, effectiveCategories, normalizeText, slugify 
 import { sha256Hex, decode, dims, dHash, hamming, toJpeg, extensionFor } from "../services/images.js";
 import { classifierStatus, classifyImages } from "../services/classifier.js";
 import { waNumber } from "../services/cart.js";
+import { KEY_TYPES, normalizeKey, plain } from "../services/pix.js";
 
 const SIMILAR_MAX_DISTANCE = 40; // artwork-hash bits (of 256): re-encoded/resized copies land at ~5–30, distinct designs at 80+
 
@@ -521,8 +522,53 @@ export function createAdmin(root) {
     check();
     return h("section", { class: "panel" },
       h("h3", { class: "ptitle", text: "Pedidos pelo WhatsApp" }),
-      h("p", { class: "muted small", text: "Quando o cliente toca em “Finalizar pelo WhatsApp” no carrinho, abre uma conversa com este número, com a lista de capinhas, quantidades e nomes já escritos." }),
+      h("p", { class: "muted small", text: "Depois de pagar, o cliente toca em “Enviar pedido pelo WhatsApp” e abre uma conversa com este número, com a lista de capinhas, quantidades, nomes, valor e código do pedido já escritos." }),
       h("label", { class: "lbl", for: "store-whatsapp" }, "WhatsApp da loja", input),
+      status,
+      viewPix());
+  }
+
+  function viewPix() {
+    const px = store.catalog.settings?.pix || {};
+    const type = h("select", { class: "field", id: "pix-type" },
+      KEY_TYPES.map((t) => h("option", { value: t.id, text: t.label, selected: (px.type || "cpf") === t.id })));
+    const key = h("input", { type: "text", class: "field", id: "pix-key", value: px.key || "", autocomplete: "off", spellcheck: "false" });
+    const name = h("input", { type: "text", class: "field", id: "pix-name", value: px.name || "", maxlength: 60, placeholder: "Como aparece no banco. Ex.: Lukx Case" });
+    const city = h("input", { type: "text", class: "field", id: "pix-city", value: px.city || "", maxlength: 40, placeholder: "Ex.: Fortaleza" });
+    const status = h("p", { class: "muted small" });
+    const placeholders = { cpf: "Ex.: 123.456.789-09", phone: "Ex.: (85) 99999-9999", email: "Ex.: loja@email.com", evp: "Ex.: 123e4567-e89b-12d3-a456-426614174000" };
+
+    const read = () => ({ type: type.value, key: key.value.trim(), name: name.value.trim(), city: city.value.trim() });
+    const check = () => {
+      const v = read();
+      key.placeholder = placeholders[v.type];
+      const k = normalizeKey(v.type, v.key);
+      if (!v.key && !v.name && !v.city) { status.textContent = "Sem chave Pix: o carrinho manda o pedido direto pelo WhatsApp, sem pagamento antes."; return false; }
+      if (!k) { status.textContent = v.key ? "Chave inválida para o tipo escolhido. Confira os números." : "Informe a chave Pix."; return false; }
+      if (!plain(v.name, 25)) { status.textContent = "Informe o nome do recebedor."; return false; }
+      if (!plain(v.city, 15)) { status.textContent = "Informe a cidade do recebedor."; return false; }
+      status.textContent = `Pronto. O cliente paga para ${plain(v.name, 25)} (${plain(v.city, 15)}), chave ${k}. O pedido só vai para o WhatsApp depois que ele confirmar o pagamento.`;
+      return true;
+    };
+    const commit = () => {
+      const v = read();
+      const empty = !v.key && !v.name && !v.city;
+      if (!empty && !check()) return;
+      store.mutate((c) => {
+        c.settings = { ...(c.settings || {}) };
+        if (empty) delete c.settings.pix; else c.settings.pix = v;
+      });
+    };
+    for (const el of [key, name, city]) { el.addEventListener("input", check); el.addEventListener("change", commit); }
+    type.addEventListener("change", () => { check(); commit(); });
+    check();
+    return h("div", { class: "panel" },
+      h("h3", { class: "ptitle", text: "Pagamento com Pix" }),
+      h("p", { class: "muted small", text: "No carrinho, o cliente vê o total, paga com o QR Code ou o Pix copia e cola gerado com esta chave e só depois envia o pedido pelo WhatsApp. O site não confirma o pagamento sozinho: confira o Pix no app do banco antes de separar o pedido." }),
+      h("label", { class: "lbl", for: "pix-type" }, "Tipo de chave", type),
+      h("label", { class: "lbl", for: "pix-key" }, "Chave Pix", key),
+      h("label", { class: "lbl", for: "pix-name" }, "Nome do recebedor", name),
+      h("label", { class: "lbl", for: "pix-city" }, "Cidade do recebedor", city),
       status);
   }
 

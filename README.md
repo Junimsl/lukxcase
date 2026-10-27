@@ -19,6 +19,10 @@ js/services/categories.js  categorias dinâmicas, contagens, filtro e pesquisa
 js/services/classifier.js  classificação visual com Claude
 js/services/images.js      SHA-256, assinatura visual (hash da arte) e preparo da imagem para análise
 js/services/platform.js    acesso às capacidades do claude.ai (usuário, salvar, Claude, download)
+js/services/cart.js        carrinho, preço por capinha, total e mensagem do pedido
+js/services/pix.js         Pix copia e cola (BR Code do Banco Central) com o valor do pedido
+js/vendor/qrcode.js        gerador de QR Code (qrcode-generator 1.4.4, licença MIT)
+js/ui/cart.js              carrinho → pagamento Pix → envio do pedido pelo WhatsApp
 js/ui/catalog.js           barra de filtros, grid paginado, estado vazio
 js/ui/modal.js             visualização ampliada com navegação anterior/próxima
 js/ui/admin.js             área administrativa
@@ -35,8 +39,9 @@ js/ui/admin.js             área administrativa
    - se o tema não existir (ex.: Dragon Ball), o Claude sugere uma categoria nova, criada ao publicar.
 3. Revise e clique em **Adicionar ao catálogo e salvar**.
 4. **Produtos**: renomear, editar descrição e palavras-chave, corrigir categorias (fica marcado como ajuste manual), reclassificar com Claude, ocultar ou excluir.
-5. **Categorias**: criar, renomear, reordenar (ordem da barra de filtros), editar sinônimos de busca e remover.
-6. Alterações ficam pendentes até **Salvar e publicar**. Cada salvamento cria uma nova versão do artifact; versões anteriores ficam no histórico.
+5. **Loja**: WhatsApp que recebe os pedidos e chave Pix (tipo, chave, nome e cidade do recebedor). Com a chave cadastrada, o cliente paga o total com Pix e só depois envia o pedido; o site não confirma o pagamento sozinho, então confira o Pix no banco.
+6. **Categorias**: criar, renomear, reordenar (ordem da barra de filtros), editar sinônimos de busca e remover.
+7. Alterações ficam pendentes até **Salvar e publicar**. Cada salvamento cria uma nova versão do artifact; versões anteriores ficam no histórico.
 
 ## Autenticação e persistência
 

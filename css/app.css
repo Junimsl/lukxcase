@@ -244,7 +244,7 @@ dialog.viewer[open] { animation: pop .22s var(--ease); }
 .viewer-media { position: relative; background: var(--well); display: grid; place-items: center; min-height: 0; }
 .viewer-media img { width: 100%; height: 100%; max-height: calc(100dvh - 32px); aspect-ratio: 1; object-fit: contain; mix-blend-mode: multiply; }
 .viewer-info { display: flex; flex-direction: column; gap: var(--s-4); padding: var(--s-6); overflow-y: auto; min-width: 0; }
-.viewer-info h2 { font-family: var(--font-display); font-weight: 600; font-size: var(--fs-h1); line-height: .95; text-transform: uppercase; margin: 0; text-wrap: balance; overflow-wrap: anywhere; }
+.viewer-info h2 { font-family: var(--font-display); font-weight: 600; font-size: var(--fs-h1); line-height: 1.12; text-transform: uppercase; margin: 0; text-wrap: balance; overflow-wrap: anywhere; }
 .viewer-info p { margin: 0; color: var(--preto-80); }
 .viewer-info dl { display: grid; grid-template-columns: auto 1fr; gap: var(--s-2) var(--s-4); margin: 0; font-size: var(--fs-small); }
 .viewer-info dt { color: var(--muted); }

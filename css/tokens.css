@@ -1,0 +1,79 @@
+/* LUKX CASE — design tokens
+   Source: Design System "Lukx Case" (project/tokens.json).
+   Official palette: branco #ffffff · amarelo #f9e216 · preto #000000.
+   Neutrals below are transparencies of the official preto — no new hues. */
+
+@font-face {
+  font-family: "Tusker Grotesk";
+  src: url("../fonts/TuskerGrotesk-5600Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sora";
+  src: url("../fonts/Sora-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sora Medium";
+  src: url("../fonts/Sora-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Official colours (Design System) */
+  --branco: #ffffff;
+  --amarelo: #f9e216;
+  --preto: #000000;
+
+  /* Neutrals derived from preto */
+  --preto-80: rgba(0, 0, 0, 0.8);
+  --preto-60: rgba(0, 0, 0, 0.62);   /* secondary text, 5.9:1 on branco */
+  --preto-16: rgba(0, 0, 0, 0.16);   /* borders */
+  --preto-08: rgba(0, 0, 0, 0.08);   /* hairlines */
+  --preto-04: rgba(0, 0, 0, 0.04);   /* image wells, quiet fills */
+  --branco-70: rgba(255, 255, 255, 0.72);
+
+  /* Roles */
+  --bg: var(--branco);
+  --fg: var(--preto);
+  --muted: var(--preto-60);
+  --line: var(--preto-08);
+  --line-strong: var(--preto-16);
+  --well: var(--preto-04);
+  --accent: var(--amarelo);      /* highlights, primary buttons, active states */
+  --on-accent: var(--preto);     /* 15.9:1 on amarelo */
+  --inverse-bg: var(--preto);
+  --inverse-fg: var(--branco);
+
+  /* Type */
+  --font-display: "Tusker Grotesk", "Sora", "Arial Narrow", sans-serif;
+  --font-text: "Sora", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --fs-hero: clamp(3.25rem, 9vw, 7rem);
+  --fs-h1: clamp(2.25rem, 5vw, 3.5rem);
+  --fs-h2: clamp(1.75rem, 3.4vw, 2.5rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-micro: 0.75rem;
+
+  /* Spacing (4px base) */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px; --s-6: 32px; --s-7: 48px; --s-8: 64px;
+
+  /* Radius — echoes the rounded strokes of the LUKX mark */
+  --r-sm: 6px;
+  --r-md: 12px;
+  --r-lg: 20px;
+  --r-pill: 999px;
+
+  --shadow-lift: 0 10px 30px -12px rgba(0, 0, 0, 0.28);
+  --ease: cubic-bezier(.2, .7, .2, 1);
+  --max: 1280px;
+
+  color-scheme: light;
+}

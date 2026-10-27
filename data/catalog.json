@@ -1,0 +1,1360 @@
+{
+ "version": 1,
+ "updatedAt": "2026-10-27T02:41:06Z",
+ "featured": [
+  "lx-004",
+  "lx-019",
+  "lx-034"
+ ],
+ "categories": [
+  {
+   "id": "naruto",
+   "name": "Naruto",
+   "keywords": [
+    "anime",
+    "ninja",
+    "konoha"
+   ],
+   "order": 0
+  },
+  {
+   "id": "marvel",
+   "name": "Marvel",
+   "keywords": [
+    "herói",
+    "heróis",
+    "hq",
+    "quadrinhos"
+   ],
+   "order": 1
+  },
+  {
+   "id": "star-wars",
+   "name": "Star Wars",
+   "keywords": [
+    "filme",
+    "sith",
+    "jedi"
+   ],
+   "order": 2
+  },
+  {
+   "id": "harry-potter",
+   "name": "Harry Potter",
+   "keywords": [
+    "bruxo",
+    "hogwarts",
+    "filme"
+   ],
+   "order": 3
+  },
+  {
+   "id": "ceara",
+   "name": "Ceará",
+   "keywords": [
+    "futebol",
+    "time",
+    "vozão"
+   ],
+   "order": 4
+  },
+  {
+   "id": "fortaleza",
+   "name": "Fortaleza",
+   "keywords": [
+    "futebol",
+    "time",
+    "leão"
+   ],
+   "order": 5
+  },
+  {
+   "id": "flamengo",
+   "name": "Flamengo",
+   "keywords": [
+    "futebol",
+    "time",
+    "mengão"
+   ],
+   "order": 6
+  },
+  {
+   "id": "palmeiras",
+   "name": "Palmeiras",
+   "keywords": [
+    "futebol",
+    "time",
+    "verdão"
+   ],
+   "order": 7
+  },
+  {
+   "id": "corinthians",
+   "name": "Corinthians",
+   "keywords": [
+    "futebol",
+    "time",
+    "timão"
+   ],
+   "order": 8
+  },
+  {
+   "id": "religiao",
+   "name": "Religião",
+   "keywords": [
+    "fé",
+    "santo",
+    "santa",
+    "católica"
+   ],
+   "order": 9
+  },
+  {
+   "id": "disney",
+   "name": "Disney",
+   "keywords": [
+    "desenho",
+    "infantil"
+   ],
+   "order": 10
+  },
+  {
+   "id": "floral",
+   "name": "Floral",
+   "keywords": [
+    "flores",
+    "delicada"
+   ],
+   "order": 11
+  }
+ ],
+ "products": [
+  {
+   "id": "lx-000",
+   "name": "Harry Potter — Colagem de Hogwarts",
+   "image": "img/cases/lx-000.avif",
+   "sourceFile": "mockup.avif",
+   "sha256": "a495566d30be9b95db09822524c78eae3670f47b09f6a7722e61ef10642ba1ff",
+   "bytes": 15909,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "harry-potter"
+   ],
+   "keywords": [
+    "harry",
+    "hermione",
+    "rony",
+    "hogwarts",
+    "pomo de ouro",
+    "ford anglia",
+    "bruxo",
+    "filme"
+   ],
+   "personalizavel": false,
+   "description": "Harry, Rony e Hermione, castelo, carro voador e pomo de ouro em colagem bege.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-001",
+   "name": "Darth Vader — Logo Star Wars",
+   "image": "img/cases/lx-001.avif",
+   "sourceFile": "mockup (1).avif",
+   "sha256": "98909142517ee7ca76e5e7412bbe99b133777c18c5803f9cc295417615fbd737",
+   "bytes": 14062,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "star-wars"
+   ],
+   "keywords": [
+    "vader",
+    "lado sombrio",
+    "sith",
+    "filme"
+   ],
+   "personalizavel": false,
+   "description": "Darth Vader em destaque sobre o logotipo Star Wars em vermelho.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-002",
+   "name": "Darth Vader — Quadrinhos",
+   "image": "img/cases/lx-002.avif",
+   "sourceFile": "mockup (2).avif",
+   "sha256": "309c217703b3ab3360acbaf1eb47529974e4087c22c41a8105033288b4b40144",
+   "bytes": 17044,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "star-wars"
+   ],
+   "keywords": [
+    "vader",
+    "sith",
+    "hq",
+    "quadrinhos"
+   ],
+   "personalizavel": false,
+   "description": "Darth Vader sobre fundo de quadrinhos em tons de cinza.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-003",
+   "name": "Vader vs. Obi-Wan — Silhueta",
+   "image": "img/cases/lx-003.avif",
+   "sourceFile": "mockup (3).avif",
+   "sha256": "bfddf5e700598f02d0a5cecc3f9de84471fb62b7df05bd07688310ab93cb8d0f",
+   "bytes": 10325,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "star-wars"
+   ],
+   "keywords": [
+    "vader",
+    "obi-wan",
+    "sabre de luz",
+    "preto e branco"
+   ],
+   "personalizavel": true,
+   "description": "Silhuetas em preto e branco com sabres de luz e espaço para nome.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-004",
+   "name": "Homem-Aranha — Meia Máscara",
+   "image": "img/cases/lx-004.avif",
+   "sourceFile": "mockup (4).avif",
+   "sha256": "0662c50f369f4e1245fba0c7592ace4d9ec47bcc0cd744ddc7162ae2deb2fb74",
+   "bytes": 14360,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "marvel"
+   ],
+   "keywords": [
+    "homem-aranha",
+    "spider-man",
+    "herói",
+    "vermelho",
+    "azul"
+   ],
+   "personalizavel": true,
+   "description": "Meia máscara do Homem-Aranha em vermelho e azul, logo Marvel e nome na lateral.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-005",
+   "name": "Homem-Aranha — Pendurado na Teia",
+   "image": "img/cases/lx-005.avif",
+   "sourceFile": "mockup (5).avif",
+   "sha256": "1903c110ff53c3623b45de14de5e614e4349b45c9f45ce7cd5196c37db09f212",
+   "bytes": 13551,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "marvel"
+   ],
+   "keywords": [
+    "homem-aranha",
+    "spider-man",
+    "herói",
+    "ilustração"
+   ],
+   "personalizavel": false,
+   "description": "Homem-Aranha de cabeça para baixo pendurado na teia, traço ilustrado.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-006",
+   "name": "Homem-Aranha — HQ Clássica",
+   "image": "img/cases/lx-006.avif",
+   "sourceFile": "mockup (6).avif",
+   "sha256": "11cedbaee84b5508231c32181eb112dd0e50726c2429621a6bdfd357164036f1",
+   "bytes": 47247,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "marvel"
+   ],
+   "keywords": [
+    "homem-aranha",
+    "spider-man",
+    "hq",
+    "quadrinhos"
+   ],
+   "personalizavel": false,
+   "description": "Homem-Aranha saltando sobre painéis de quadrinhos clássicos.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-007",
+   "name": "Justiceiro — Caveira",
+   "image": "img/cases/lx-007.avif",
+   "sourceFile": "mockup (7).avif",
+   "sha256": "c1170e746bbc716c905e2fc424f04ae9da37251da80694fbe490804ce27d8968",
+   "bytes": 11129,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "marvel"
+   ],
+   "keywords": [
+    "justiceiro",
+    "punisher",
+    "caveira",
+    "preto"
+   ],
+   "personalizavel": false,
+   "description": "Caveira do Justiceiro em branco sobre fundo preto.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-008",
+   "name": "Marvel Comics — Colagem de HQs",
+   "image": "img/cases/lx-008.avif",
+   "sourceFile": "mockup (8).avif",
+   "sha256": "79bd8f26c8746984303fa19818baaf83520ff6656edaaff9ae8953949247f99c",
+   "bytes": 53289,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "marvel"
+   ],
+   "keywords": [
+    "thanos",
+    "capitão américa",
+    "punho de ferro",
+    "wolverine",
+    "hq",
+    "quadrinhos",
+    "vingadores"
+   ],
+   "personalizavel": true,
+   "description": "Colagem colorida de quadrinhos Marvel com faixa para nome.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-009",
+   "name": "Homem-Aranha — Adesivos",
+   "image": "img/cases/lx-009.avif",
+   "sourceFile": "mockup (9).avif",
+   "sha256": "e888c80a7e6b227f2f2c24a1198103f2c1eb57b4047985cfe4a9d313892c241b",
+   "bytes": 26196,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "marvel"
+   ],
+   "keywords": [
+    "homem-aranha",
+    "spider-man",
+    "adesivos",
+    "stickers",
+    "iniciais"
+   ],
+   "personalizavel": true,
+   "description": "Adesivos do Homem-Aranha sobre fundo transparente, com iniciais.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-010",
+   "name": "Shikamaru Nara",
+   "image": "img/cases/lx-010.avif",
+   "sourceFile": "mockup (10).avif",
+   "sha256": "08c27d69f4f286471b33d59255d1720523fa4a4be90a8539f1a508c504617923",
+   "bytes": 12466,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "naruto"
+   ],
+   "keywords": [
+    "shikamaru",
+    "anime",
+    "konoha",
+    "ninja",
+    "verde"
+   ],
+   "personalizavel": false,
+   "description": "Shikamaru com colete de Konoha sobre símbolo verde.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-011",
+   "name": "Jiraiya e Gamabunta",
+   "image": "img/cases/lx-011.avif",
+   "sourceFile": "mockup (11).avif",
+   "sha256": "85cade34fa44d77dd1a889cba1f77362f3b00bf400235b74bed5e6ecd7ee133a",
+   "bytes": 18479,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "naruto"
+   ],
+   "keywords": [
+    "jiraiya",
+    "gamabunta",
+    "sapo",
+    "anime",
+    "ninja"
+   ],
+   "personalizavel": true,
+   "description": "Jiraiya sentado sobre o sapo Gamabunta, com nome na lateral.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-012",
+   "name": "Itachi Uchiha — Corvos",
+   "image": "img/cases/lx-012.avif",
+   "sourceFile": "mockup (12).avif",
+   "sha256": "a097aeca2519199a4f6241b4a3e0a6c30f12b5ddc1cc449d7f47250fc15a51e4",
+   "bytes": 12370,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "naruto"
+   ],
+   "keywords": [
+    "itachi",
+    "uchiha",
+    "akatsuki",
+    "corvos",
+    "anime"
+   ],
+   "personalizavel": false,
+   "description": "Itachi com manto da Akatsuki cercado por corvos.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-013",
+   "name": "Sasuke Uchiha",
+   "image": "img/cases/lx-013.avif",
+   "sourceFile": "mockup (13).avif",
+   "sha256": "57605c761e5aa7dc80235af15cfd9e29ced7ac6133e776c45965fcfa3f5b16d1",
+   "bytes": 13178,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "naruto"
+   ],
+   "keywords": [
+    "sasuke",
+    "uchiha",
+    "anime",
+    "ninja"
+   ],
+   "personalizavel": true,
+   "description": "Sasuke de perfil com espada, nome na lateral.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-014",
+   "name": "Ceará — Escudo Preto",
+   "image": "img/cases/lx-014.avif",
+   "sourceFile": "mockup (14).avif",
+   "sha256": "a0581ac2cf40f8508f4a97e6e7dd9708a1cea38e64787bfad9e5fac410459238",
+   "bytes": 13339,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "ceara"
+   ],
+   "keywords": [
+    "vozão",
+    "ceará sporting",
+    "alvinegro",
+    "futebol",
+    "escudo"
+   ],
+   "personalizavel": false,
+   "description": "Escudo do Ceará em destaque sobre padrão preto.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-015",
+   "name": "Ceará — Tua Glória é Lutar",
+   "image": "img/cases/lx-015.avif",
+   "sourceFile": "mockup (15).avif",
+   "sha256": "76de2de9a1cc6e30bd3f415eb34ba1e6c96e433a759b5cfecf039c296405c7eb",
+   "bytes": 9489,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "ceara"
+   ],
+   "keywords": [
+    "vozão",
+    "ceará sporting",
+    "alvinegro",
+    "futebol",
+    "listras",
+    "hino"
+   ],
+   "personalizavel": false,
+   "description": "Escudo do Ceará sobre listras escuras e a frase do hino.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-016",
+   "name": "Ceará — Branca com Listras",
+   "image": "img/cases/lx-016.avif",
+   "sourceFile": "mockup (16).avif",
+   "sha256": "7d0c0c998a53b5a6cdb0b6bbacaaeb3073496797e355ac579975993fc099aa6f",
+   "bytes": 9055,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "ceara"
+   ],
+   "keywords": [
+    "vozão",
+    "ceará sporting",
+    "alvinegro",
+    "futebol",
+    "branca"
+   ],
+   "personalizavel": false,
+   "description": "Escudo preto do Ceará sobre fundo branco com listras verticais.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-017",
+   "name": "Fortaleza — Adesivos Tricolor",
+   "image": "img/cases/lx-017.avif",
+   "sourceFile": "mockup (17).avif",
+   "sha256": "67c7d8990823f9b8ea3589fa72387c3ca3a3ad9bff4e415df194d39b32b82963",
+   "bytes": 44642,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "fortaleza"
+   ],
+   "keywords": [
+    "leão",
+    "laion",
+    "tricolor",
+    "1918",
+    "futebol",
+    "adesivos"
+   ],
+   "personalizavel": false,
+   "description": "Adesivos do Fortaleza em azul, vermelho e branco.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-018",
+   "name": "Fortaleza — É o Laion",
+   "image": "img/cases/lx-018.avif",
+   "sourceFile": "mockup (18).avif",
+   "sha256": "58d73e850a21a74b2fa878c1c5d749d6703e6c7fdeea47c2553fcfa44f62dd00",
+   "bytes": 28995,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "fortaleza"
+   ],
+   "keywords": [
+    "leão",
+    "laion",
+    "tricolor",
+    "torcida",
+    "futebol",
+    "colagem"
+   ],
+   "personalizavel": false,
+   "description": "Colagem da torcida e escudo do Fortaleza.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-019",
+   "name": "Fortaleza Esporte Clube — Leão 1918",
+   "image": "img/cases/lx-019.avif",
+   "sourceFile": "mockup (19).avif",
+   "sha256": "78a63e9bbda08dd606dc0dc0436116019d5a23ed9c2c2736722eeebc97e53015",
+   "bytes": 19501,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "fortaleza"
+   ],
+   "keywords": [
+    "leão",
+    "laion",
+    "tricolor",
+    "1918",
+    "futebol",
+    "vintage"
+   ],
+   "personalizavel": false,
+   "description": "Leão vintage e escrita Fortaleza Esporte Clube.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-020",
+   "name": "Flamengo — Listras CRF",
+   "image": "img/cases/lx-020.avif",
+   "sourceFile": "mockup (20).avif",
+   "sha256": "455fc0bd5fa1e9b13d95edb40023e931d35f375a94e57a28ef04eeeee6aa99ec",
+   "bytes": 7820,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "flamengo"
+   ],
+   "keywords": [
+    "mengão",
+    "crf",
+    "rubro-negro",
+    "futebol",
+    "listras"
+   ],
+   "personalizavel": true,
+   "description": "Monograma CRF sobre listras rubro-negras, com nome.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-021",
+   "name": "Flamengo — Colagem Rubro-Negra",
+   "image": "img/cases/lx-021.avif",
+   "sourceFile": "mockup (21).avif",
+   "sha256": "45328fb92f806d50138868d015ba4562b3f525840f3132e4b0331008f6fc59d9",
+   "bytes": 29556,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "flamengo"
+   ],
+   "keywords": [
+    "mengão",
+    "crf",
+    "rubro-negro",
+    "torcida",
+    "futebol",
+    "colagem"
+   ],
+   "personalizavel": false,
+   "description": "Colagem de recortes do Flamengo com monograma CRF.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-022",
+   "name": "Flamengo — Adesivos Mengão",
+   "image": "img/cases/lx-022.avif",
+   "sourceFile": "mockup (22).avif",
+   "sha256": "46b578bf32a0a73574920996670931d1232cbc9b8043aabfe2f6f9d2bc698ed8",
+   "bytes": 38732,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "flamengo"
+   ],
+   "keywords": [
+    "mengão",
+    "crf",
+    "rubro-negro",
+    "libertadores",
+    "futebol",
+    "adesivos"
+   ],
+   "personalizavel": false,
+   "description": "Adesivos de títulos e conquistas do Flamengo.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-023",
+   "name": "Palmeiras — Tricô Verde",
+   "image": "img/cases/lx-023.avif",
+   "sourceFile": "mockup (23).avif",
+   "sha256": "6a019c8b466718074cf4eb5dfe82fd52182d6445d4f9aff0ed17aaba10f4e40c",
+   "bytes": 21757,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "palmeiras"
+   ],
+   "keywords": [
+    "verdão",
+    "palestra",
+    "porco",
+    "futebol",
+    "verde"
+   ],
+   "personalizavel": false,
+   "description": "Símbolo P do Palmeiras sobre textura de tricô verde.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-024",
+   "name": "Palmeiras — Porco 1914",
+   "image": "img/cases/lx-024.avif",
+   "sourceFile": "mockup (24).avif",
+   "sha256": "f0e7e359bcd1911d757010ed2c8f934cba3a50fd595f8155481dbc8ce99b72f5",
+   "bytes": 29781,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "palmeiras"
+   ],
+   "keywords": [
+    "verdão",
+    "palestra",
+    "porco",
+    "1914",
+    "futebol"
+   ],
+   "personalizavel": false,
+   "description": "Mascote porco de terno em moldura ornamentada 1914.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-025",
+   "name": "Palmeiras — Avanti Palestra",
+   "image": "img/cases/lx-025.avif",
+   "sourceFile": "mockup (25).avif",
+   "sha256": "f663f0c8bd42098ff5dcb0bae088a4382192f17104510c067c929130ae98c536",
+   "bytes": 28424,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "palmeiras"
+   ],
+   "keywords": [
+    "verdão",
+    "palestra",
+    "avanti",
+    "futebol",
+    "ornamentos"
+   ],
+   "personalizavel": false,
+   "description": "Escudo do Palmeiras em moldura de folhagens verdes.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-026",
+   "name": "Palmeiras — Mapa",
+   "image": "img/cases/lx-026.avif",
+   "sourceFile": "mockup (26).avif",
+   "sha256": "61510eac3f1542d6996f02926f3abfae972b4c2a9c0fb38e58aac3e7e4eb461e",
+   "bytes": 35343,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "palmeiras"
+   ],
+   "keywords": [
+    "verdão",
+    "palestra",
+    "mapa",
+    "futebol",
+    "vintage"
+   ],
+   "personalizavel": true,
+   "description": "Símbolo P sobre mapa antigo da América do Sul, com nome.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-027",
+   "name": "Corinthians — Chosen by Favela",
+   "image": "img/cases/lx-027.avif",
+   "sourceFile": "mockup (27).avif",
+   "sha256": "64f2d7415779e98d0f9319b2cf15486ad4d6d8761feb865da5cad6ad5f146582",
+   "bytes": 14898,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "corinthians"
+   ],
+   "keywords": [
+    "timão",
+    "fiel",
+    "sccp",
+    "favela",
+    "futebol"
+   ],
+   "personalizavel": false,
+   "description": "Arte 'Chosen by Favela' com monograma do Corinthians.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-028",
+   "name": "Corinthians — Escudo Laranja",
+   "image": "img/cases/lx-028.avif",
+   "sourceFile": "mockup (28).avif",
+   "sha256": "d280f1db5be61155c87b76ed22a979e8f456b0251323391b464331b490df3b09",
+   "bytes": 13304,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "corinthians"
+   ],
+   "keywords": [
+    "timão",
+    "fiel",
+    "sccp",
+    "futebol",
+    "laranja"
+   ],
+   "personalizavel": true,
+   "description": "Escudo do Corinthians em laranja sobre preto, com nome.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-029",
+   "name": "Corinthians — Escudo Preto",
+   "image": "img/cases/lx-029.avif",
+   "sourceFile": "mockup (29).avif",
+   "sha256": "a11b58b366b7f5fc5a8bfe26f561d543bdd59afe802fba5e611da64d9c3ec4a0",
+   "bytes": 6954,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "corinthians"
+   ],
+   "keywords": [
+    "timão",
+    "fiel",
+    "sccp",
+    "futebol",
+    "preto"
+   ],
+   "personalizavel": true,
+   "description": "Escudo do Corinthians em relevo cinza sobre preto, com nome.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-030",
+   "name": "Santa Teresinha — Rosas",
+   "image": "img/cases/lx-030.avif",
+   "sourceFile": "mockup (30).avif",
+   "sha256": "0d9effee0b6fc9597943e608c8bf1a3a0b30a665ecb2555dd87992aecbfa69c9",
+   "bytes": 13044,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "religiao"
+   ],
+   "keywords": [
+    "santa teresinha",
+    "santa",
+    "rosas",
+    "católica",
+    "fé"
+   ],
+   "personalizavel": false,
+   "description": "Santa Teresinha segurando rosas em tons de rosa.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-031",
+   "name": "São José e o Menino Jesus",
+   "image": "img/cases/lx-031.avif",
+   "sourceFile": "mockup (31).avif",
+   "sha256": "9d28f9e0c3d75bda2e6784a0195ecabf670a3ee82b3af6f7ea1b0a6ac110cd5f",
+   "bytes": 14578,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "religiao"
+   ],
+   "keywords": [
+    "são josé",
+    "menino jesus",
+    "santo",
+    "lírios",
+    "católica",
+    "fé"
+   ],
+   "personalizavel": false,
+   "description": "Pintura de São José com o Menino Jesus e lírios.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-033",
+   "name": "Nossa Senhora — Luz da Vela",
+   "image": "img/cases/lx-033.avif",
+   "sourceFile": "mockup (33).avif",
+   "sha256": "2cb59bf6dcb54a01e7aef8495c29508ac046a56fcb4faba1250a340c7157ee84",
+   "bytes": 11699,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "religiao"
+   ],
+   "keywords": [
+    "nossa senhora",
+    "maria",
+    "vela",
+    "católica",
+    "fé"
+   ],
+   "personalizavel": false,
+   "description": "Nossa Senhora de manto azul segurando uma vela.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-034",
+   "name": "Nossa Senhora Aparecida",
+   "image": "img/cases/lx-034.avif",
+   "sourceFile": "mockup (34).avif",
+   "sha256": "b43123b09b2145912c88990105e1d5f0c3b873bd46dcedd96268aca7b615aecc",
+   "bytes": 13588,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "religiao"
+   ],
+   "keywords": [
+    "nossa senhora aparecida",
+    "aparecida",
+    "maria",
+    "padroeira",
+    "católica",
+    "fé"
+   ],
+   "personalizavel": true,
+   "description": "Nossa Senhora Aparecida ilustrada, com nome em letra cursiva.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-035",
+   "name": "Floral Bordado — Borboletas",
+   "image": "img/cases/lx-035.avif",
+   "sourceFile": "mockup (35).avif",
+   "sha256": "0f912aca740bde2d10fd5d0770b9238357329fc8cacb142dedb72c9b29a59bfd",
+   "bytes": 22889,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "floral"
+   ],
+   "keywords": [
+    "flores",
+    "bordado",
+    "borboletas",
+    "delicada",
+    "iniciais"
+   ],
+   "personalizavel": true,
+   "description": "Flores e borboletas em estilo bordado, com iniciais e nome.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-036",
+   "name": "Floral Dourado — Borboletas",
+   "image": "img/cases/lx-036.avif",
+   "sourceFile": "mockup (36).avif",
+   "sha256": "9ca406323d94be8a71eb83a41c7c7376f760780dc008909f5297cba2000c2886",
+   "bytes": 9938,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "floral"
+   ],
+   "keywords": [
+    "flores",
+    "dourado",
+    "borboletas",
+    "rosa",
+    "delicada"
+   ],
+   "personalizavel": true,
+   "description": "Flores em traço dourado e borboletas rosa, com nome.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-037",
+   "name": "Flores Aquarela",
+   "image": "img/cases/lx-037.avif",
+   "sourceFile": "mockup (37).avif",
+   "sha256": "5c5cfc019049a7456737c5a0061e6e038b512c44efb4653bbdf4f44f5294e2ce",
+   "bytes": 13101,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "floral"
+   ],
+   "keywords": [
+    "flores",
+    "aquarela",
+    "delicada",
+    "colorida"
+   ],
+   "personalizavel": true,
+   "description": "Flores em aquarela com traço fino, com nome.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-038",
+   "name": "Ursinho Pooh e Amigos",
+   "image": "img/cases/lx-038.avif",
+   "sourceFile": "mockup (38).avif",
+   "sha256": "d1072412292595a6475e050997914c3a1beffefd9d0b226a76075274aa6b1549",
+   "bytes": 26488,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "disney"
+   ],
+   "keywords": [
+    "pooh",
+    "ursinho pooh",
+    "tigrão",
+    "bisonho",
+    "leitão",
+    "infantil"
+   ],
+   "personalizavel": false,
+   "description": "Ursinho Pooh, Tigrão, Bisonho e Leitão em padrão aquarela.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  },
+  {
+   "id": "lx-039",
+   "name": "São Francisco — Oração da Paz",
+   "image": "img/cases/lx-039.avif",
+   "sourceFile": "mockup (39).avif",
+   "sha256": "544996e6dd16839ddedaad019f8cb4f0fd116d02fccd0c39eb2038091bf202c3",
+   "bytes": 8661,
+   "width": 550,
+   "height": 550,
+   "categories": [
+    "religiao"
+   ],
+   "keywords": [
+    "são francisco",
+    "são francisco de assis",
+    "oração",
+    "pombas",
+    "católica",
+    "fé"
+   ],
+   "personalizavel": false,
+   "description": "Silhueta de São Francisco com a oração 'Senhor, fazei de mim instrumento de vossa paz'.",
+   "classification": {
+    "method": "visual",
+    "by": "Claude (análise visual)",
+    "confidence": 0.97,
+    "at": "2026-10-27T00:57:32Z",
+    "manual": false
+   },
+   "createdAt": "2026-10-27T00:57:32Z",
+   "updatedAt": "2026-10-27T00:57:32Z"
+  }
+ ],
+ "duplicates": [
+  {
+   "file": "mockup (32).avif",
+   "sha256": "9d28f9e0c3d75bda2e6784a0195ecabf670a3ee82b3af6f7ea1b0a6ac110cd5f",
+   "duplicateOf": "lx-031",
+   "detectedAt": "2026-10-27T00:57:32Z"
+  }
+ ],
+ "settings": {
+  "whatsapp": "(85) 98149-7364"
+ }
+}

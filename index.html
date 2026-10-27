@@ -1,0 +1,97 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>LUKX CASE Catálogo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Catálogo de capinhas LUKX CASE: personagens, times e fé.">
+<link rel="icon" href="brand/lukx-case-icone.png">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/admin.css">
+
+<a class="sr-only" href="#results">Pular para as capinhas</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="LUKX CASE — início do catálogo">
+      <img class="brand-full" src="brand/lukx-case-logo.png" alt="LUKX CASE" width="1377" height="642">
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a id="catalog-link" href="#" aria-current="page">Catálogo</a>
+      <a id="manage-link" href="#admin" hidden>Gerenciar</a>
+    </nav>
+    <button type="button" class="cart-btn" id="cart-btn" aria-label="Abrir carrinho">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l1 13H5L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+      <span class="cart-label">Carrinho</span>
+      <span class="cart-badge" id="cart-badge" hidden>0</span>
+    </button>
+    <div class="search" role="search">
+      <label class="sr-only" for="search">Pesquisar capinhas</label>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="search" type="search" autocomplete="off" enterkeyhint="search" placeholder="Pesquise por personagem, time ou tema">
+      <button id="search-clear" class="clear" type="button" aria-label="Limpar pesquisa" hidden>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="public-view">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Catálogo de capinhas</p>
+        <h1 id="hero-title">A case que tem a <span class="mark">sua cara</span>.</h1>
+        <p class="lead"><strong>Personagens, times do coração e artes de fé.</strong> Filtre pelo tema que você curte ou pesquise pelo nome e toque na capinha para ver os detalhes.</p>
+        <div class="hero-stats" aria-live="polite">
+          <div><strong id="stat-products">–</strong><span>modelos</span></div>
+          <div><strong id="stat-themes">–</strong><span>temas</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <picture>
+          <source srcset="brand/hero-capinhas.webp" type="image/webp">
+          <img src="brand/hero-capinhas.png" alt="Capinhas LUKX CASE com estampas do Justiceiro, Darth Vader, Ursinho Pooh, Nossa Senhora e Flamengo" width="1403" height="1121" fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="results" aria-labelledby="results-title" tabindex="-1">
+    <div class="results-bar">
+      <div class="results-head">
+        <h2 id="results-title">Todas as capinhas</h2>
+        <p id="results-summary" aria-live="polite">Carregando capinhas…</p>
+      </div>
+      <div class="filter-dd">
+        <button type="button" class="filter-btn" id="filter-btn" aria-haspopup="listbox" aria-expanded="false" aria-controls="filter-menu">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+        <span>Filtrar por tema</span>
+        <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="filter-menu" id="filter-menu" role="listbox" aria-label="Temas" hidden></ul>
+      </div>
+    </div>
+    <div class="grid" id="grid" aria-busy="false"></div>
+    <div class="empty" id="empty" hidden>
+      <h3>Nada por aqui</h3>
+      <p data-empty-msg></p>
+      <div class="actions">
+        <button class="btn" type="button" data-clear-search>Limpar pesquisa</button>
+        <button class="btn primary" type="button" data-all>Ver todas as capinhas</button>
+      </div>
+    </div>
+    <div class="sentinel" id="sentinel" hidden></div>
+  </section>
+</main>
+
+<main id="admin-view" hidden></main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <img src="brand/lukx-case-logo.png" alt="LUKX CASE" width="1377" height="642">
+    <span>Imagens ilustrativas. A arte de cada capinha é exibida sem cortes ou alterações.</span>
+  </div>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+
+</body></html>

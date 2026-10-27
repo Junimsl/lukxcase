@@ -9,6 +9,7 @@ import { qtyStepper } from "./cart.js";
 export function createViewer({ onCategory, onOpenCart, onAdd }) {
   const img = h("img", { alt: "" });
   const title = h("h2", { id: "viewer-title" });
+  const price = h("p", { class: "viewer-price" });
   const count = h("span", { class: "viewer-count" });
   const desc = h("p");
   const tags = h("div", { class: "tags" });
@@ -24,7 +25,7 @@ export function createViewer({ onCategory, onOpenCart, onAdd }) {
       h("div", { class: "viewer-media" }, img, h("div", { class: "viewer-nav" }, prevBtn, nextBtn)),
       h("div", { class: "viewer-info" },
         h("div", { class: "viewer-top" }, count, closeBtn),
-        title, tags, desc, details, buy, actions)));
+        title, price, tags, desc, details, buy, actions)));
   document.body.append(dialog);
 
   let ids = [], index = 0;
@@ -37,6 +38,9 @@ export function createViewer({ onCategory, onOpenCart, onAdd }) {
     img.src = store.imageSrc(p);
     img.alt = `Capinha ${p.name}`;
     title.textContent = p.name;
+    const value = Number(p.price ?? store.catalog.settings?.price);
+    price.textContent = value > 0 ? value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" }) : "";
+    price.hidden = !(value > 0);
     count.textContent = ids.length > 1 ? `${index + 1} de ${ids.length}` : "";
     tags.replaceChildren(...cats.map((id) => h("span", { class: `tag${id === UNCLASSIFIED.id ? " review" : ""}`, text: cmap.get(id)?.name || id })),
       ...(p.personalizavel ? [h("span", { class: "tag solid", text: "Personalizável" })] : []));

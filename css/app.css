@@ -246,7 +246,7 @@ dialog.viewer[open] { animation: pop .22s var(--ease); }
 .viewer-info { display: flex; flex-direction: column; gap: var(--s-4); padding: var(--s-6); overflow-y: auto; min-width: 0; }
 .viewer-info h2 { font-family: var(--font-display); font-weight: 600; font-size: var(--fs-h1); line-height: 1.12; text-transform: uppercase; margin: 0; text-wrap: balance; overflow-wrap: anywhere; }
 .viewer-info p { margin: 0; color: var(--preto-80); }
-.viewer-info .viewer-price { align-self: flex-start; margin-top: calc(var(--s-2) * -1); padding: 4px 14px 2px; border-radius: var(--r-pill); background: var(--accent); color: var(--on-accent); border: 1.5px solid var(--fg); font-family: var(--font-display); font-weight: 600; font-size: 2rem; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.viewer-info .viewer-price { align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; margin-top: var(--s-2); padding: 8px 16px; border-radius: var(--r-pill); background: var(--accent); color: var(--on-accent); border: 1.5px solid var(--fg); font-family: var(--font-text); font-weight: 700; font-size: 1.125rem; line-height: 1; font-variant-numeric: tabular-nums; }
 .viewer-info dl { display: grid; grid-template-columns: auto 1fr; gap: var(--s-2) var(--s-4); margin: 0; font-size: var(--fs-small); }
 .viewer-info dt { color: var(--muted); }
 .viewer-info dd { margin: 0; font-weight: 500; }

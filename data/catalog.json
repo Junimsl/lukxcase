@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-10-27T03:42:56.144Z",
+ "updatedAt": "2026-10-27T03:58:43.298Z",
  "featured": [
   "lx-004",
   "lx-019",
@@ -1356,6 +1356,12 @@
  ],
  "settings": {
   "whatsapp": "(85) 98207-1822",
-  "price": 35
+  "price": 35,
+  "pix": {
+   "type": "cpf",
+   "key": "09039851360",
+   "name": "IVANILDO DE SOUZA LIMA JÚNIOR",
+   "city": "Maranguape"
+  }
  }
 }
